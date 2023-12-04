@@ -1,5 +1,5 @@
 import sys
-import logging
+from src.logger import logging
 
 def error_message_details(error,error_detail:sys):
     _,_,exc_tb=error_detail.exc_info() #exc_tb = which file which line exception occured
@@ -22,6 +22,6 @@ class CustomException(Exception):
 #     try:
 #         a=1/0
 #     except Exception as e:
-#         logging.info("Logging has started")
+#         logging.info("Divide by zero")
 #         raise CustomException(e,sys)
     
